@@ -17,21 +17,30 @@
     />
   </head>
   <body>
+    <script src="script.js" defer></script>
     <!-- Header -->
     <header>
-      <p>Ehtisham <span>A.</span></p>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
-      </ul>
+      <div class="navbar">
+        <p class="nav-logo">Ehtisham <span>A.</span></p>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#work">Work</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="burger-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
+    <!-- <hr style="z-index: 100; position: relative" /> -->
 
     <!-- ---Main---- -->
     <main>
-      <div class="intro">
+      <div class="intro" id="home">
         <div class="intro-para">
           <p>Hey It's Me</p>
           <h1>Ehtisham Ahmad</h1>
@@ -40,7 +49,7 @@
             Through this portfolio, I aim to showcase my skills, experiences,
             and the unique perspective I bring to [your industry].
           </p>
-          <button>Contact</button>
+          <button><a href="#contact">Contact</a></button>
           <div class="myLinks">
             <a
               href="https://www.linkedin.com/in/ehtisham-ahmad-b0b1302a1/"
@@ -65,5 +74,203 @@
     </main>
 
     <!-- -----------ABOUT--------------- -->
+    <div class="about-section" id="about">
+      <div class="about-info">
+        <img src="images/Me2.png" alt="" />
+        <div>
+          <h1>About Me</h1>
+          <p>
+            A dynamic web developer and avid student on a journey to merge the
+            best of both worlds—coding and academia. Currently pursuing my
+            studies in Bachelors of Computer Science, I find joy in crafting
+            digital experiences that seamlessly blend functionality and
+            aesthetics. I'm excited to share my portfolio with you. Dive in and
+            explore the diverse range of projects that showcase my skills and
+            dedication. let's create something amazing together! Feel free to
+            reach out: <br />
+            <span
+              ><i class="fa-solid fa-envelope"></i> eht0419@outlook.com
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------SKILLS---------------------- -->
+    <div class="skills-section" id="skills">
+      <h1>My Skills</h1>
+      <div class="skills">
+        <div class="skill-box skill-1">
+          <div class="small-circle small-circle1"></div>
+          <div class="skill-background"><i class="fa-brands fa-html5"></i></div>
+
+          <p class="skill-heading">HTML</p>
+          <p>
+            With mastery in HTML, I skillfully structure and organize web
+            content, ensuring a solid foundation for seamless user experiences
+            and effective information presentation.
+          </p>
+        </div>
+        <div class="skill-box skill-2">
+          <div class="small-circle small-circle1"></div>
+          <div class="skill-background">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <p class="skill-heading">CSS</p>
+          <p>
+            As a CSS expert, I bring creativity to life through intricate
+            styling, using advanced techniques to achieve visually stunning
+            layouts and responsive design across various devices.
+          </p>
+        </div>
+        <div class="skill-box skill-3">
+          <div class="small-circle small-circle1"></div>
+          <div class="skill-background"><i class="fa-brands fa-js"></i></div>
+
+          <p class="skill-heading">JavaScript</p>
+          <p>
+            My expertise in JavaScript empowers me to create dynamic and
+            interactive web experiences, incorporating smooth animations and
+            user-friendly features that elevate the overall engagement.
+          </p>
+        </div>
+        <div class="skill-box skill-4">
+          <div class="small-circle small-circle1"></div>
+          <div class="skill-background">
+            <i class="fa-solid fa-paintbrush"></i>
+          </div>
+
+          <p class="skill-heading">UI/UX</p>
+          <p>
+            In UI/UX design, I specialize in creating visually appealing and
+            intuitive interfaces, employing user-centric principles to enhance
+            navigation, usability, and overall satisfaction in every digital
+            interaction.
+          </p>
+        </div>
+        <div class="skill-box skill-5">
+          <div class="small-circle small-circle1"></div>
+          <div class="skill-background">
+            <i class="fa-brands fa-python"></i>
+          </div>
+
+          <p class="skill-heading">Python</p>
+          <p>
+            In Python, I excel at backend development, crafting robust
+            server-side solutions that handle data processing, logic
+            implementation, and seamless communication for a reliable and
+            efficient web environment.
+          </p>
+        </div>
+        <div class="skill-box skill-6">
+          <div class="small-circle small-circle1"></div>
+          <div class="skill-background">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <p class="skill-heading">MySQL</p>
+          <p>
+            With a deep understanding of MySQL, I proficiently design and manage
+            databases, ensuring optimal data organization, retrieval, and
+            storage to support scalable and efficient web applications.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------WORK----------------------- -->
+    <div class="work-section" id="work">
+      <h1>My Projects</h1>
+      <div class="projects">
+        <div class="project-box project-1">
+          <h2>Food Menu</h2>
+          <img src="images/Food-Menu.png" alt="" draggable="false" />
+          <p>
+            A C++ Project that takes order from the user and provide a bill
+            using programming fundamentals.
+          </p>
+        </div>
+        <div class="project-box project-2">
+          <h2>Bank Management C++</h2>
+          <img src="images/Bank-system.png" alt="" draggable="false" />
+          <p>C++ OOP Project that lets you manage a bank system.</p>
+        </div>
+        <div class="project-box project-3">
+          <h2>Reminder Alarm</h2>
+          <img src="images/alarm.png" alt="" draggable="false" />
+          <p>This project allows you to set reminders of your tasks.</p>
+        </div>
+        <div class="project-box project-4">
+          <h2>Snake Game</h2>
+          <img src="images/Snake-Game.png" alt="" draggable="false" />
+          <p>Classis Snake game built in C++.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------CONTACT----------------- -->
+    <div class="contact-section" id="contact">
+      <h1>Contact Me</h1>
+      <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="43ae05f7-799d-48be-b421-681287f4130d"
+          />
+          <div class="name-phone">
+            <div class="input-group">
+              <input type="text" name="name" id="name" required />
+              <label for="name"
+                ><i class="fa-solid fa-user icon"></i>Name</label
+              >
+            </div>
+            <div class="input-group">
+              <input type="text" name="phone-no" id="phone-no" required />
+              <label for="phone-no"
+                ><i class="fa-solid fa-phone icon"></i>Phone Number</label
+              >
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input type="email" name="email" id="email" required />
+            <label for="email"
+              ><i class="fa-solid fa-envelope icon"></i>Email</label
+            >
+          </div>
+          <div class="input-group">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message"
+              ><i class="fa-solid fa-message icon"></i>Message</label
+            >
+          </div>
+          <button id="submit-button" type="submit">
+            Submit <i class="fa-solid fa-paper-plane icon"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ----------------------FOOTER------------------------- -->
+    <div class="footer-section">
+      <div class="footer-logo">
+        <p>Ehtisham <span>A.</span></p>
+      </div>
+      <div class="footer-socials">
+        <a
+          href="https://www.linkedin.com/in/ehtisham-ahmad-b0b1302a1/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/EhtishamAhmad1" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div class="copyright">
+        <i class="fa-solid fa-copyright"></i>
+        <p>2024 Ehtisham Ahmad. All rights reserved</p>
+      </div>
+    </div>
   </body>
 </html>
